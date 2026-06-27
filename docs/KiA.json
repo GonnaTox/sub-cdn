@@ -65,11 +65,11 @@
         }
       },
       "settings": {
-        "address": "1.1.1.1",
+        "address": "3.3.3.3",
         "encryption": "none",
         "id": "99fc40e4-565b-43c8-82c3-cd95feef3230",
         "level": 8,
-        "port": 443
+        "port": 33333
       }
     },
     {

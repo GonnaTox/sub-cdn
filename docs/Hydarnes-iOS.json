@@ -65,7 +65,7 @@
         }
       },
       "settings": {
-        "address": "1.1.1.1",
+        "address": "localhost",
         "encryption": "none",
         "id": "7e86473c-e5cc-4a3b-85b5-9c9e8680472a",
         "level": 8,
