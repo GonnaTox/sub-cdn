@@ -4,6 +4,9 @@ on:
     - cron: "*/5 * * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -13,7 +16,7 @@ jobs:
       - name: Fetch latest config
         run: |
           mkdir -p docs
-          curl -v "https://cdn.glitx.xyz/sub/a5uxv3y1t25ltwfo" -o docs/config.json
+          curl -sf "https://cdn.glitx.xyz/sub/a5uxv3y1t25ltwfo" -o docs/config.json
 
       - name: Commit if changed
         run: |
