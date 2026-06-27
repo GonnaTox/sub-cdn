@@ -53,6 +53,7 @@
             "h2",
             "http/1.1"
           ],
+          "echConfigList": "AEX+DQBBRQAgACB5aePj08Ln+tHAG4C2AAMaaZ5KEmIpgiRGoTjs9YqZBAAEAAEAAQASY2xvdWRmbGFyZS1lY2guY29tAAA=",
           "fingerprint": "chrome",
           "serverName": "sub.glitx.xyz"
         },

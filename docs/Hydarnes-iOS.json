@@ -53,6 +53,7 @@
             "h2",
             "http/1.1"
           ],
+          "echConfigList": "AEX+DQBBRQAgACB5aePj08Ln+tHAG4C2AAMaaZ5KEmIpgiRGoTjs9YqZBAAEAAEAAQASY2xvdWRmbGFyZS1lY2guY29tAAA=",
           "fingerprint": "chrome",
           "serverName": "sub.glitx.xyz"
         },
@@ -64,7 +65,7 @@
         }
       },
       "settings": {
-        "address": "localhost",
+        "address": "127.0.0.1",
         "encryption": "none",
         "id": "7e86473c-e5cc-4a3b-85b5-9c9e8680472a",
         "level": 8,
