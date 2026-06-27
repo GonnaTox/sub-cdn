@@ -53,7 +53,6 @@
             "h2",
             "http/1.1"
           ],
-          "echConfigList": "AEX+DQBBbgAgACDMXTfKpZqwqGkOdYz6sNcNzkV86QsvnUWmtDwc24PKMQAEAAEAAQASY2xvdWRmbGFyZS1lY2guY29tAAA=",
           "fingerprint": "chrome",
           "serverName": "sub.glitx.xyz"
         },
@@ -105,7 +104,7 @@
       "statsOutboundUplink": true
     }
   },
-  "remarks": "ZZ-Nazgol",
+  "remarks": "ZZ",
   "routing": {
     "domainStrategy": "AsIs",
     "rules": [

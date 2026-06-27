@@ -53,7 +53,6 @@
             "h2",
             "http/1.1"
           ],
-          "echConfigList": "AEX+DQBBbgAgACDMXTfKpZqwqGkOdYz6sNcNzkV86QsvnUWmtDwc24PKMQAEAAEAAQASY2xvdWRmbGFyZS1lY2guY29tAAA=",
           "fingerprint": "chrome",
           "serverName": "sub.glitx.xyz"
         },
@@ -65,11 +64,11 @@
         }
       },
       "settings": {
-        "address": "localhost",
+        "address": "127.0.0.1",
         "encryption": "none",
         "id": "58e3f832-0215-4247-9d53-3383646193b9",
         "level": 8,
-        "port": 443
+        "port": 40443
       }
     },
     {
@@ -105,7 +104,7 @@
       "statsOutboundUplink": true
     }
   },
-  "remarks": "ZZ-Zag",
+  "remarks": "ZZ",
   "routing": {
     "domainStrategy": "AsIs",
     "rules": [
