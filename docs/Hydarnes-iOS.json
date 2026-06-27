@@ -1,0 +1,120 @@
+{
+  "dns": {
+    "queryStrategy": "UseIP",
+    "servers": [
+      {
+        "address": "8.8.8.8",
+        "skipFallback": false
+      }
+    ],
+    "tag": "dns_out"
+  },
+  "inbounds": [
+    {
+      "port": 10808,
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls",
+          "quic",
+          "fakedns"
+        ],
+        "enabled": true
+      },
+      "tag": "mixed"
+    },
+    {
+      "port": 10809,
+      "protocol": "http",
+      "settings": {
+        "userLevel": 8
+      },
+      "tag": "http"
+    }
+  ],
+  "log": {
+    "loglevel": "warning"
+  },
+  "outbounds": [
+    {
+      "protocol": "vless",
+      "tag": "proxy",
+      "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "tlsSettings": {
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "echConfigList": "AEX+DQBBBAAgACCqMhirzljCcLOar36ev7j3vYZ0D5jg2SKg4R0kmt2BBQAEAAEAAQASY2xvdWRmbGFyZS1lY2guY29tAAA=",
+          "fingerprint": "chrome",
+          "serverName": "sub.glitx.xyz"
+        },
+        "xhttpSettings": {
+          "host": "sub.glitx.xyz",
+          "mode": "auto",
+          "path": "/assignment",
+          "xPaddingBytes": "100-1000"
+        }
+      },
+      "settings": {
+        "address": "1.1.1.1",
+        "encryption": "none",
+        "id": "7e86473c-e5cc-4a3b-85b5-9c9e8680472a",
+        "level": 8,
+        "port": 443
+      }
+    },
+    {
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "AsIs",
+        "noises": [],
+        "redirect": ""
+      },
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      },
+      "tag": "block"
+    }
+  ],
+  "policy": {
+    "levels": {
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    },
+    "system": {
+      "statsOutboundDownlink": true,
+      "statsOutboundUplink": true
+    }
+  },
+  "remarks": "ZZ-Hydarnes-iOS",
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "network": "tcp,udp",
+        "outboundTag": "proxy",
+        "type": "field"
+      }
+    ]
+  },
+  "stats": {}
+}
