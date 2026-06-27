@@ -64,11 +64,11 @@
         }
       },
       "settings": {
-        "address": "104.27.48.2231",
+        "address": "104.27.48.223",
         "encryption": "none",
         "id": "de85bd43-f9b1-4b22-935d-c86d5ff74a25",
         "level": 8,
-        "port": 4431
+        "port": 443
       }
     },
     {
