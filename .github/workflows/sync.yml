@@ -12,7 +12,8 @@ jobs:
 
       - name: Fetch latest config
         run: |
-          curl -s "https://cdn.glitx.xyz/sub/a5uxv3y1t25ltwfo" -o docs/config.json
+          mkdir -p docs
+          curl -v "https://cdn.glitx.xyz/sub/a5uxv3y1t25ltwfo" -o docs/config.json
 
       - name: Commit if changed
         run: |
